@@ -6,6 +6,7 @@ $(function() {
     return function() {
       id += 1;
       if (id === 86 || id === 97) { id += 1; }
+      if (id > 100) { id -= 100; }
       return `<img src="https://picsum.photos/id/${id}/120/150" />`;
     }
   })();
